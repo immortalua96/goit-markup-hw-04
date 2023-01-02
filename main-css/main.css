@@ -137,8 +137,13 @@ color: var(--color-for-btn-text-hover);
 /* hero section */
 
 .bc-fon{
-    
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--color-for-bc);
+    background-image: linear-gradient(to right,rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)) ,url(../images/Fon-for-hero/people-office\ .jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-top: 188px;
     padding-bottom: 188px;
     text-align: center;
