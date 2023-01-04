@@ -235,9 +235,10 @@ color: var(--color-for-btn-text-hover);
 /* section team */
 .bc-team{
     background-color:var(--color-for-btn-secondary) ;
+    text-align: center;
     padding-top: 120px;
     padding-bottom: 120px;
-    text-align: center;
+    
 }
 .team{
 font-weight: 700;
