@@ -13,6 +13,10 @@
     --color-for-btn-hov-foc-hero:#404BBF;
     --color-for-footer-head:#F4F4FD;
     --color-for-footer-text:#E7E9FC;
+    --color-for-border-costamers:#8E8F99;
+    --color-for-footer-icon-bc:rgba(255, 255, 255, 0.1);
+    --color-for-footer-icon-hover:#31D0AA;
+    
     
     /* fonts */
     --logo-font:Raleway,sans-serif;
@@ -193,7 +197,7 @@ color: var(--color-for-btn-text-hover);
     margin-left: calc(-1 * var(--card-between-gab));
 }
 .about{
-    flex-basis: calc(100% / 4 - var(--card-between-gab));
+    width: calc(100% / 4 - var(--card-between-gab));
     margin-left:var(--card-between-gab);
 }
 .about >.head{
@@ -204,6 +208,51 @@ color: var(--color-for-btn-text-hover);
     line-height: 1.2;
     color: var(--color-for-hedear);
     letter-spacing: 0.02em;
+}
+.about::before{
+    display: block;
+    content:'';
+    margin-bottom: 8px;
+    padding: 0;
+    background-color: var(--color-for-footer-head);
+    width: 264px;
+    height: 112px;
+}
+.icon-antenna::before{
+    display: block;
+    content: '';
+    padding-top: 24px;
+    background-image: url(../images/icon/not-optimize/antenna.svg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.icon-clock::before {
+    display: block;
+    content: '';
+    padding-top: 24px;
+    background-image: url(../images/icon/not-optimize/clock\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.icon-diagram::before {
+    display: block;
+    content: '';
+    padding-top: 24px;
+    background-image: url(../images/icon/not-optimize/diagram\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.icon-astronaut::before {
+    display: block;
+    content: '';
+    padding-top: 24px;
+    background-image: url(../images/icon/not-optimize/astronaut\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 /* online page */
 .text >.curent{
@@ -379,4 +428,117 @@ color:var(--color-for-footer-text);
 .footer-marging{
     padding-top: 96px;
     padding-bottom: 120px;
+}
+/* icon for link section my team */
+.group-icon{
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+        margin-top: 8px;
+        gap: 24px;
+        height: 40px;
+}
+.icon-main{
+    display: block;
+    padding: 0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    fill: var(--color-for-footer-head);
+    border-radius: 50%;
+    background-color: var(--color-for-logo);
+    
+}
+.icon-link{
+    margin: 12px;
+    width: 16px;
+    height: 16px;
+}
+.icon-main:hover{
+    background-color: var(--color-for-btn-hov-foc-hero);
+}
+/* section costomers */
+.section-customer{
+    padding-top: 43px;
+    padding-bottom: 120px;
+}
+.head-customer{
+     
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+    
+        color:var(--color-for-bc);
+}
+.customer{
+        display: flex;
+        text-align: center;
+        padding: 0px;
+        margin-top: 72px;
+        gap: 24px;
+}
+.bisnes-partner{
+        display: block;
+        padding: 16px 32px;
+        width: 168px;
+        height: 88px;
+        fill: var(--color-for-border-costamers);
+        border: 1px solid var(--color-for-border-costamers);
+        border-radius: 4px;
+}
+.brend{
+    margin: 6px;
+}
+.bisnes-partner:hover{
+   fill: var(--color-for-btn-hov-foc-hero);
+   border: 1px solid var(--color-for-btn-hov-foc-hero);
+   border-radius: 4px;
+}
+
+/* footer icon */
+.flex-footer{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.footer-media{
+    margin-left: 120px;
+    width: 208px;
+}
+.footer-media >.media{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--color-for-body);
+        
+}
+.footer-list{
+    display: flex;
+    padding: 0px;
+    margin-top: 8px;
+    gap: 16px;
+    height: 40px;
+    
+}
+.footer-link{
+       display: block;
+        padding: 0;
+        border: none;
+        width: 40px;
+        height: 40px;
+        fill: var(--color-for-footer-head);
+        border-radius: 50%;
+        background-color: var(--color-for-footer-icon-bc);
+}
+.footer-icon{
+    margin: 8px;
+    width: 24px;
+    height: 24px;
+}
+.footer-link:hover{
+    background-color: var(--color-for-footer-icon-hover);
 }
