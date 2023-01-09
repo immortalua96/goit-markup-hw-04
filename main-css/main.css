@@ -218,6 +218,7 @@ color: var(--color-for-btn-text-hover);
     background-position: center;
 }
 .icon-antenna::before{
+    
     display: block;
     content: '';
     background-image: url(../images/icon/not-optimize/antenna.svg) ;
@@ -411,11 +412,9 @@ color:var(--color-for-footer-text);
 }
 .link-card{
     display: block;
-    border: 1px solid #E7E9FC;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .link-card:hover,.link-card:focus{
-    border: 0.5px solid #F4F4FD;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -480,6 +479,7 @@ color:var(--color-for-footer-text);
     fill:currentColor;
 }
 .bisnes-partner:hover,.bisnes-partner:focus{
+    border: 1px solid currentColor;
    color: var(--color-for-btn-hov-foc-hero);
 }
 
